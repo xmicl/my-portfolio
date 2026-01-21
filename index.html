@@ -7,26 +7,26 @@
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
-      background-color: #f9f9f9;
+      background-color: #4B0082; /* 짙은 자줏빛 배경 */
       display: flex;
       justify-content: center;
     }
     h1 {
       text-align: center;
-      color: #2c3e50;
+      color: #FFD700; /* 노란빛 제목 */
       width: 100%;
     }
     .gallery {
       display: flex;
-      flex-direction: column; /* 세로로 일렬 배치 */
+      flex-direction: column; /* 세로 일렬 배치 */
       align-items: center;    /* 가운데 정렬 */
       gap: 30px;              /* 카드 간격 */
     }
     .card {
       width: 300px;
-      background: white;
+      background: #FFD700; /* 카드 진한 노란빛 */
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       transition: transform 0.2s;
     }
     .card img {
@@ -37,31 +37,30 @@
     .card h2 {
       margin: 10px;
       font-size: 1.2em;
-      color: #3498db;
+      color: #4B0082; /* 카드 안 글자 자줏빛 */
     }
     .card p {
       font-size: 0.9em;
-      color: #555;
+      color: #333;
       margin: 0 10px 10px;
     }
     .card a {
       display: inline-block;
       margin: 10px;
       padding: 8px 12px;
-      background: #3498db;
+      background: #4B0082; /* 버튼 자줏빛 */
       color: white;
       border-radius: 5px;
       text-decoration: none;
     }
     .card a:hover {
-      background: #2980b9;
+      background: #2c003e; /* 더 짙은 자줏빛 */
     }
 
-    /* 카드마다 다른 회전값 적용 */
+    /* 삐뚤빼뚤 회전 */
     .card:nth-child(1) { transform: rotate(-5deg); }
     .card:nth-child(2) { transform: rotate(8deg); }
     .card:nth-child(3) { transform: rotate(-12deg); }
-    .card:nth-child(4) { transform: rotate(6deg); }
   </style>
 </head>
 <body>
@@ -71,25 +70,24 @@
       <div class="card">
         <img src="image/post1.jpg" alt="첫 번째 글 이미지">
         <h2>01</h2>
-        <p>HTML 첫장</p>
+        <p>하나</p>
         <a href="post1.html">GO</a>
       </div>
 
       <div class="card">
         <img src="image/post2.jpg" alt="두 번째 글 이미지">
         <h2>02</h2>
-        <p>두 번째 장</p>
+        <p>둘</p>
         <a href="post2.html">GO</a>
       </div>
 
       <div class="card">
         <img src="image/post3.jpg" alt="세 번째 글 이미지">
         <h2>03</h2>
-        <p>세 번째 장</p>
+        <p>셋</p>
         <a href="post3.html">GO</a>
       </div>
     </div>
   </div>
 </body>
 </html>
-
