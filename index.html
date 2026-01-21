@@ -17,21 +17,17 @@
       width: 100%;
     }
     .gallery {
-      column-count: 3; /* 열 개수 */
-      column-gap: 20px; /* 열 간격 */
-      max-width: 1000px;
+      display: flex;
+      flex-direction: column; /* 세로로 일렬 배치 */
+      align-items: center;    /* 가운데 정렬 */
+      gap: 30px;              /* 카드 간격 */
     }
     .card {
-      display: inline-block;
+      width: 300px;
       background: white;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin: 0 0 20px;
-      width: 100%;
       transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.05);
     }
     .card img {
       width: 100%;
@@ -60,6 +56,12 @@
     .card a:hover {
       background: #2980b9;
     }
+
+    /* 카드마다 다른 회전값 적용 */
+    .card:nth-child(1) { transform: rotate(-5deg); }
+    .card:nth-child(2) { transform: rotate(8deg); }
+    .card:nth-child(3) { transform: rotate(-12deg); }
+    .card:nth-child(4) { transform: rotate(6deg); }
   </style>
 </head>
 <body>
